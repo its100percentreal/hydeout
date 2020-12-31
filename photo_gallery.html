@@ -25,6 +25,6 @@ images:
 
 <div class="gallery-container gallery-columns">
   {% for image in page.images %}
-  <a href="image.image_path" data-lightbox="photo-gallery"><div class="gallery-image"><img src="{{ image.image_path | relative_url }}" alt="{{ image.title }}"/></div></a>
+  <a href="{{ image.image_path | relative_url }}" data-lightbox="photo-gallery"><div class="gallery-image"><img src="{{ image.image_path | relative_url }}" alt="{{ image.title }}"/></div></a>
   {% endfor %}
 </div>
