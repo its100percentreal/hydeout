@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head-lightbox.html %}
+
+  <body class="{{ page.layout }}{% if page.url == '/' %} home {% else %} not-home {% endif %}">
+
+    {% include sidebar-not-home.html %}
+
+    <main class="container">
+      {{ content }}
+    </main>
+
+    {% include custom-foot.html %}
+  </body>
+</html>

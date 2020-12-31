@@ -1,4 +1,24 @@
 <nav id="sidebar-icon-links">
+  
+  <a id="github-download-link"
+       class="icon" title="Instagram" aria-label="Instagram"
+       href="https://www.instagram.com/chava_goodtime" target="blank">
+      {% include svg/instagram.svg %}
+    </a>
+  
+    <a id="github-download-link"
+    class="icon" title="Youtube" aria-label="Youtube"
+    href="https://www.youtube.com/user/birchtreeawesome" target="blank">
+   {% include svg/youtube.svg %}
+ </a>
+
+ <a id="github-download-link"
+ class="icon" title="Soundcloud" aria-label="Soundcloud"
+ href="https://soundcloud.com/abbbz-2" target="blank">
+{% include svg/soundcloud.svg %}
+</a>
+
+
   {% if site.hydeout.repo %}
     <a id="github-link"
        class="icon" title="Github Project" aria-label="Github Project"
@@ -12,11 +32,11 @@
     </a>
   {% endif %}
 
-  <a id="subscribe-link"
+  <!-- <a id="subscribe-link"
      class="icon" title="Subscribe" aria-label="Subscribe"
      href="{{ site.feed.path | default: 'feed.xml' | relative_url }}">
     {% include svg/feed.svg %}
-  </a>
+  </a> -->
 
   {% comment %}
     Check if we have tag or search pages page active before linking to it.

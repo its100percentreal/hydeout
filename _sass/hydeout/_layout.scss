@@ -150,7 +150,8 @@ body {
   /* Undo mobile CSS */
 
   #sidebar,
-  .home #sidebar {
+  .home #sidebar,
+  .not-home #sidebar {
     text-align: left;
     width: $sidebar-width;
 
@@ -230,7 +231,7 @@ body {
     }
 
     > * {
-      max-width: 38rem;
+      max-width: 76rem;
       padding: 0;
     }
   }

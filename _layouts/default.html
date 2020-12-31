@@ -3,9 +3,9 @@
 
   {% include head.html %}
 
-  <body class="{{ page.layout }}{% if page.url == '/' %} home{% endif %}">
+  <body class="{{ page.layout }}{% if page.url == '/' %} home {% else %} not-home {% endif %}">
 
-    {% include sidebar.html %}
+    {% include sidebar-not-home.html %}
 
     <main class="container">
       {{ content }}

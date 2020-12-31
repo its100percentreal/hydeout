@@ -1,0 +1,30 @@
+---
+layout: gallery-lightbox
+title: Photo Gallery
+sidebar_link: true
+images:
+  - image_path: /assets/img/photo_gallery/54770966_10156897541018257_5135072820472053760_o.jpeg
+    title: 
+  - image_path: /assets/img/photo_gallery/55554529_10156897541458257_1438083345668898816_o.jpeg
+    title: 
+  - image_path: /assets/img/photo_gallery/bagel.jpg
+    title: Bagel
+  - image_path: assets/img/photo_gallery/bagelssss.jpeg
+    title: 
+  - image_path: assets/img/photo_gallery/caaaa.jpg
+    title: 
+  - image_path: /assets/img/photo_gallery/cassss.jpg
+    title: 
+  - image_path: /assets/img/photo_gallery/DSC_4440.jpg
+    title: 
+  - image_path: /assets/img/photo_gallery/DSC_4451.jpg
+    title: 
+  - image_path: /assets/img/photo_gallery/DSC_4546.jpg
+    title: 
+---
+
+<div class="gallery-container gallery-columns">
+  {% for image in page.images %}
+  <a href="{{ image.image_path | relative_url }}" data-lightbox="photo-gallery"><div class="gallery-image"><img src="{{ image.image_path | relative_url }}" alt="{{ image.title }}"/></div></a>
+  {% endfor %}
+</div>

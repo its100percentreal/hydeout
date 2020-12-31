@@ -5,9 +5,16 @@
 {% assign pages_list = site.pages|sort:"sidebar_sort_order" %}
 {% for node in pages_list %}
   {% if node.title != null %}
+  {% if node.title != 'Contact Me' %}
     {% if node.sidebar_link %}
       <a class="page-link {% if page.url == node.url %} active{% endif %}"
           href="{{ node.url | relative_url }}">{{ node.title }}</a>
     {% endif %}
   {% endif %}
+  {% endif %}
 {% endfor %}
+
+<a class="page-link {% if page.url == '/contact.html' %} active{% endif %}"
+          href="{{ '/contact/' | relative_url }}">Contact Me</a>
+
+
